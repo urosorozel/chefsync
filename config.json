@@ -1,0 +1,41 @@
+{
+  "dirs": {
+    "chefrepo": "chefrepo",
+    "oldversions": "oldversions",
+    "keys": "keys",
+    "knife": "knife"
+  },
+  "types": [
+    "cookbooks",
+    "roles",
+    "environments",
+    "data_bags"
+  ],
+    "master": {
+    "site": "Master site",
+    "chef_url": "https://10.118.125.168",
+    "server_ip": "10.118.125.168",
+    "keyname": "chef11-admin.pem",
+    "knife": "chef11-knife.rb"
+  },
+   "slaves": { "slave1":
+    {
+      "site": "Slavesite",
+      "chef_url": "https://10.118.75.213",
+      "server_ip": "10.118.75.213",
+      "keyname": "chef11sec-admin.pem",
+      "knife": "chef11sec-knife.rb"
+    }}
+  ,
+  "slave": [
+    {
+      "site": "Slavesite",
+      "chef_url": "https://10.118.75.213",
+      "server_ip": "10.118.75.213",
+      "keyname": "chef11sec-admin.pem",
+      "knife": "chef11sec-knife.rb"
+    }
+  ],
+  "logname": "chefsync.log",
+  "ssh_user": "root"
+}
